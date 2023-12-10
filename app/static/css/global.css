@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #f3f3f3;
+    --secondary-color: #f3f3f3;
+
+
+
+    --h1-size: 3rem;
+    --h2-size: 1.5rem;
+    --h3-size: 1.25rem;
+    --h5-size: 1rem;
+
+    --p-size: 1rem;
+    --font-family: 'SF Pro Display';
+    --content-font-style: 'Source Code Pro';
+
+    --hover-text-color: #f3f3f3;
+    --active-text-color: #f3f3f3;
+
+
+    --text-color-active: #244E35;
+    --text-color: #369B4B;
+    
+    --fc-highlight-color: rgb(175 238 194 / 30%);
+    --fc-bg-event-color: #8fdf82;
+
+    --fc-button-bg-color: #2f7547;
+    --fc-button-border-color: #2f7547;
+    --fc-button-hover-bg-color: #244E35;
+    --fc-button-hover-border-color: #244E35;
+    --fc-button-active-bg-color: #244E35;
+    --fc-button-active-border-color: #244E35;
+}
+
+h1 {
+    font-size: var(--h1-size);
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: var(--h2-size);
+    font-family: var(--font-family);
+    margin: 0;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+h4 {
+    font-size: var(--h4-size);
+}
+
+h5 {
+    font-size: var(--h5-size);
+}
+
+p {
+    font-size: var(--p-size);
+}
+
+header-textstyle {
+    font-family: var(--font-family);
+}
+
+content-textstyle {
+    font-family: var(--font-family);
+}

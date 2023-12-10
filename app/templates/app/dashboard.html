@@ -1,0 +1,78 @@
+
+<script>
+    function calendar() {
+            var calendarEl = document.getElementById('calendar-timeline');
+    
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                timeZone: 'UTC',
+                initialView: 'dayGridWeek',
+                headerToolbar: {
+                  left: 'title',
+                  right: 'dayGridWeek,dayGridFifteen prev,next'
+                },
+                views: {
+                  dayGridFifteen: {
+                    type:'dayGrid',
+                    duration: { weeks: 2 },
+                    buttonText: '14-day'
+                  }
+                },
+                editable: true,
+                contentHeight:'auto'
+              });
+              
+              calendar.render();
+            };
+        calendar()
+  calendar.Updatesize(); 
+    </script>
+<h1>
+    Dashboard
+</h1>
+<div class="dashboard-nav">
+    <button class="sensors" >
+        sensors-1
+    </button>
+    <button class="sensors">
+        sensors-2
+    </button>
+    <button class="sensors">
+        sensors-3
+    </button>
+</div>
+
+<div class="dashboard-content">
+    <div class="left-content">
+        <div class="sensordata-block">
+            <div class="npk">
+                <h2>Fertility</h2>
+                <div class="npk-data-wrapper">
+                    <div class="npk-data-font ">(N)<span class="title-npk">NITROGEN </span> mg/kg</div>
+                    <div class="npk-data-font">(P)<span class="title-npk">PHOSPHORUS </span> mg/kg</div>
+                    <div class="npk-data-font">(K)<span class="title-npk">POTASSIUM </span> mg/kg</div>
+                </div>
+            </div>
+            <div class="temperature">
+                <h2>Temperature</h2>
+
+                <div class="sensor-data-wrapper">
+                    <span>0.0 °C</span>
+                </div>
+            </div>
+            <div class="moisture">
+                <h2>Moisture</h2>
+                <div class="sensor-data-wrapper">
+                    <span>0.0 </span>
+                </div>
+            </div>
+        </div>
+        <div class="calendar-block">
+            <h2>Calendar</h2>
+            <div id='calendar-timeline'></div>
+        </div>
+    </div>
+    <div class="right-content-insights">
+        <h2>Insights</h2>
+    </div>
+</div>
+
